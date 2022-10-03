@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  font-family: "Helvetica Neue";
+}
+
+.wd-main-content {
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  border-color: rgb(47, 51, 54);
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+}
+
+hr {
+  background-color: rgb(47, 51, 54);
+  height: 1px;
+  border: none;
+}
