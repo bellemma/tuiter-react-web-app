@@ -5,3 +5,7 @@
 .wd-text-over-img {
   position: relative;
 }
+
+input {
+  text-indent: 10%;
+}
