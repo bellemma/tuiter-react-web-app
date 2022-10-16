@@ -1,271 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <script src="https://kit.fontawesome.com/7ac540c3bc.js" crossorigin="anonymous"></script>
   <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
   <link href="index.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/7ac540c3bc.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+          crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Explore screen</title>
 </head>
 <body>
-<script>console.log('Hello World')
-</script>
-<div class="container mb-2 mt-2">
-  <div class="row">
-    <div class="col-12 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2 text-black">
 
-      <div class="list-group overflow-hidden text-nowrap">
-        <a href="#" class="list-group-item list-group-item-action">
-          <i class="fa-brands fa-twitter"></i></a>
+<div class="container mb-2 mt-2" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
 
-        <a href="../home.html" class="list-group-item list-group-item-action">
-          <i class="fa-solid fa-house"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Home</div>
-        </a>
-
-        <a href="#" class="list-group-item list-group-item-action active">
-          <i class="fa-solid fa-hashtag"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Explore</div>
-        </a>
-
-        <a href="../notifications.html" class="list-group-item list-group-item-action">
-          <i class="fa-solid fa-bell"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Notifications</div>
-        </a>
-
-        <a href="../messages.html" class="list-group-item list-group-item-action">
-          <i class="fa-solid fa-envelope"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Messages</div>
-        </a>
-
-        <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
-          <i class="fa-solid fa-bookmark"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Bookmarks</div>
-        </a>
-
-        <a href="../lists.html" class="list-group-item list-group-item-action">
-          <i class="fa-solid fa-list"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Lists</div>
-        </a>
-
-        <a href="../profile.html" class="list-group-item list-group-item-action">
-          <i class="fa-solid fa-user"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Profile</div>
-        </a>
-
-        <a href="#" class="list-group-item list-group-item-action">
-          <i class="fa-solid fa-ellipsis"></i>
-          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">More</div>
-        </a>
-      </div>
-
-      <a class="btn btn-primary col-12 rounded-pill mt-1" href="../tuit.html">Tuit</a>
-    </div>
-
-    <div class="col-12 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6 text-black">
-
-      <div class="row align-items-center">
-        <div class="col-11 position-relative">
-          <input type="text" class="form-control rounded-pill align-items-center"
-                 placeholder="Search Tuiter" id="search"/>
-            <i class="fa-solid fa-magnifying-glass position-absolute ms-5 top-50 start-0 translate-middle"></i>
-        </div>
-        <div class="col-1 text-primary">
-          <div class="wd-large-icon">
-            <a href="#">
-              <i class="fa-solid fa-gear "></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <ul class="nav nav-tabs mt-2">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">For You</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Trending</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sports</a>
-        </li>
-        <li class="nav-item d-sm-none d-md-inline d-lg-inline d-xl-inline d-xxl-inline">
-          <a class="nav-link" href="#">Entertainment</a>
-        </li>
-      </ul>
-
-      <div class="position-relative">
-      <img class="mt-2 img-fluid" src="starship.webp" width="100%"/>
-      <h2 class="text-white position-absolute bottom-0 start-0 ms-2">Space X's Starship</h2>
-      </div>
-
-      <ul class="list-group">
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-10 align-items-top">
-              <div class="text-secondary">
-                Web Development
-              </div>
-              ReactJS <i class="fa-solid fa-circle-check d-inline"></i>
-              <div class="text-secondary d-inline">
-                - 2h
-              </div><br>
-              React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
-            </div>
-            <div class="col-2 ">
-              <img class="rounded" src="logo-react.svg" width="100%"/>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-10 align-items-top">
-              JavaScript <i class="fa-solid fa-circle-check d-inline"></i>
-              <div class="text-secondary d-inline">
-                - 2h
-              </div><br>
-              JavaScript is a programming language that can run on browsers as well as desktops
-              <div class="text-secondary">
-                123k Tuits
-              </div>
-            </div>
-              <div class="col-2">
-              <img class="rounded" src="js.png" width="100%"/>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-10 align-items-top">
-              <div class="text-secondary">
-                Web Development
-              </div>
-              jQuery
-              <div class="text-secondary">
-                123k Tuits
-              </div>
-              </div>
-            <div class="col-2 ">
-              <img class="rounded" src="jquery.png" width="100%"/>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-10 align-items-top">
-              <div class="text-secondary">
-                Web Development
-              </div>
-              NodeJS <i class="fa-solid fa-circle-check d-inline"></i>
-              <div class="text-secondary d-inline">
-                - 2h
-              </div><br>
-              <div class="text-secondary">
-                123k Tuits
-              </div>
-            </div>
-            <div class="col-2 ">
-              <img class="rounded" src="nodejs.png" width="100%"/>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-
-
-    <div class="col-12  d-sm-none d-md-none d-lg-inline d-xxl-inline d-xl-inline
-    col-lg-4 col-xl-4 col-xxl-4 text-black">
-
-      <ul class="list-group">
-        <li class="list-group-item"><b>Who to follow</b></li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-2">
-              <img class="rounded-circle" src="java.png" width="50px"/>
-            </div>
-            <div class="col-6 text-nowrap">
-              <b>Java</b>
-              <span><i class="fa-solid fa-circle-check"></i></span><br>
-              @Java
-            </div>
-            <div class="col-4">
-              <a class="btn btn-primary btn-block col-12 rounded-pill"
-                 href="#">Follow</a>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-2">
-              <img class="rounded-circle" src="relspace.webp" width="50px"/>
-            </div>
-            <div class="col-6 text-nowrap">
-              <b>Relativity Space</b>
-              <span><i class="fa-solid fa-circle-check"></i></span><br>
-              @relativityspace
-            </div>
-            <div class="col-4">
-              <a class="btn btn-primary btn-block col-12 rounded-pill"
-                 href="#">Follow</a>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-2">
-              <img class="rounded-circle" src="vgalactic.png" width="50px"/>
-            </div>
-            <div class="col-6 text-nowrap">
-              <b>Virgin Galactic</b>
-              <span><i class="fa-solid fa-circle-check"></i></span><br>
-              @virgingalactic
-            </div>
-            <div class="col-4">
-              <a class="btn btn-primary btn-block col-12 rounded-pill"
-                 href="#">Follow</a>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-2">
-              <img class="rounded-circle" src="nasa.png" width="50px"/>
-            </div>
-            <div class="col-6 text-nowrap">
-              <b>NASA</b>
-              <span><i class="fa-solid fa-circle-check"></i></span><br>
-              @NASA
-            </div>
-            <div class="col-4">
-              <a class="btn btn-primary btn-block col-12 rounded-pill"
-                 href="#">Follow</a>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row align-items-center">
-            <div class="col-2">
-              <img class="rounded-circle" src="tesla.png" width="50px"/>
-            </div>
-            <div class="col-6 text-nowrap">
-              <b>Tesla</b>
-              <span><i class="fa-solid fa-circle-check"></i></span><br>
-              @tesla
-            </div>
-            <div class="col-4">
-              <a class="btn btn-primary btn-block col-12 rounded-pill"
-                 href="#">Follow</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</div>
 </body>
 </html>
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Title</title>-->
+<!--  <script src="https://kit.fontawesome.com/7ac540c3bc.js" crossorigin="anonymous"></script>-->
+<!--  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>-->
+<!--  <link href="index.css" rel="stylesheet"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--<script>console.log('Hello World')-->
+<!--</script>-->
+<!--<div class="container mb-2 mt-2">-->
+<!--  <div class="row">-->
+<!--    <div class="col-12 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2 text-black">-->
+
+<!--      <div class="list-group overflow-hidden text-nowrap">-->
+<!--        <a href="#" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-brands fa-twitter"></i></a>-->
+
+<!--        <a href="../home.html" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-solid fa-house"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Home</div>-->
+<!--        </a>-->
+
+<!--        <a href="#" class="list-group-item list-group-item-action active">-->
+<!--          <i class="fa-solid fa-hashtag"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Explore</div>-->
+<!--        </a>-->
+
+<!--        <a href="../notifications.html" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-solid fa-bell"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Notifications</div>-->
+<!--        </a>-->
+
+<!--        <a href="../messages.html" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-solid fa-envelope"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Messages</div>-->
+<!--        </a>-->
+
+<!--        <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-solid fa-bookmark"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Bookmarks</div>-->
+<!--        </a>-->
+
+<!--        <a href="../lists.html" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-solid fa-list"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Lists</div>-->
+<!--        </a>-->
+
+<!--        <a href="../profile.html" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-solid fa-user"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">Profile</div>-->
+<!--        </a>-->
+
+<!--        <a href="#" class="list-group-item list-group-item-action">-->
+<!--          <i class="fa-solid fa-ellipsis"></i>-->
+<!--          <div class="d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none">More</div>-->
+<!--        </a>-->
+<!--      </div>-->
+
+<!--      <a class="btn btn-primary col-12 rounded-pill mt-1" href="../tuit.html">Tuit</a>-->
+<!--    </div>-->
+
+<!--    <div class="col-12 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6 text-black">-->
+
+<!--      <div class="row align-items-center">-->
+<!--        <div class="col-11 position-relative">-->
+<!--          <input type="text" class="form-control rounded-pill align-items-center"-->
+<!--                 placeholder="Search Tuiter" id="search"/>-->
+<!--            <i class="fa-solid fa-magnifying-glass position-absolute ms-5 top-50 start-0 translate-middle"></i>-->
+<!--        </div>-->
+<!--        <div class="col-1 text-primary">-->
+<!--          <div class="wd-large-icon">-->
+<!--            <a href="#">-->
+<!--              <i class="fa-solid fa-gear "></i>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <ul class="nav nav-tabs mt-2">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" href="#">For You</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Trending</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">News</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">Sports</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item d-sm-none d-md-inline d-lg-inline d-xl-inline d-xxl-inline">-->
+<!--          <a class="nav-link" href="#">Entertainment</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+
+<!--      <div class="position-relative">-->
+<!--      <img class="mt-2 img-fluid" src="starship.webp" width="100%"/>-->
+<!--      <h2 class="text-white position-absolute bottom-0 start-0 ms-2">Space X's Starship</h2>-->
+<!--      </div>-->
+
+<!--      <ul class="list-group">-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-10 align-items-top">-->
+<!--              <div class="text-secondary">-->
+<!--                Web Development-->
+<!--              </div>-->
+<!--              ReactJS <i class="fa-solid fa-circle-check d-inline"></i>-->
+<!--              <div class="text-secondary d-inline">-->
+<!--                - 2h-->
+<!--              </div><br>-->
+<!--              React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs-->
+<!--            </div>-->
+<!--            <div class="col-2 ">-->
+<!--              <img class="rounded" src="logo-react.svg" width="100%"/>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-10 align-items-top">-->
+<!--              JavaScript <i class="fa-solid fa-circle-check d-inline"></i>-->
+<!--              <div class="text-secondary d-inline">-->
+<!--                - 2h-->
+<!--              </div><br>-->
+<!--              JavaScript is a programming language that can run on browsers as well as desktops-->
+<!--              <div class="text-secondary">-->
+<!--                123k Tuits-->
+<!--              </div>-->
+<!--            </div>-->
+<!--              <div class="col-2">-->
+<!--              <img class="rounded" src="js.png" width="100%"/>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-10 align-items-top">-->
+<!--              <div class="text-secondary">-->
+<!--                Web Development-->
+<!--              </div>-->
+<!--              jQuery-->
+<!--              <div class="text-secondary">-->
+<!--                123k Tuits-->
+<!--              </div>-->
+<!--              </div>-->
+<!--            <div class="col-2 ">-->
+<!--              <img class="rounded" src="jquery.png" width="100%"/>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-10 align-items-top">-->
+<!--              <div class="text-secondary">-->
+<!--                Web Development-->
+<!--              </div>-->
+<!--              NodeJS <i class="fa-solid fa-circle-check d-inline"></i>-->
+<!--              <div class="text-secondary d-inline">-->
+<!--                - 2h-->
+<!--              </div><br>-->
+<!--              <div class="text-secondary">-->
+<!--                123k Tuits-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-2 ">-->
+<!--              <img class="rounded" src="nodejs.png" width="100%"/>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
+
+<!--    </div>-->
+
+
+<!--    <div class="col-12  d-sm-none d-md-none d-lg-inline d-xxl-inline d-xl-inline-->
+<!--    col-lg-4 col-xl-4 col-xxl-4 text-black">-->
+
+<!--      <ul class="list-group">-->
+<!--        <li class="list-group-item"><b>Who to follow</b></li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-2">-->
+<!--              <img class="rounded-circle" src="java.png" width="50px"/>-->
+<!--            </div>-->
+<!--            <div class="col-6 text-nowrap">-->
+<!--              <b>Java</b>-->
+<!--              <span><i class="fa-solid fa-circle-check"></i></span><br>-->
+<!--              @Java-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <a class="btn btn-primary btn-block col-12 rounded-pill"-->
+<!--                 href="#">Follow</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-2">-->
+<!--              <img class="rounded-circle" src="relspace.webp" width="50px"/>-->
+<!--            </div>-->
+<!--            <div class="col-6 text-nowrap">-->
+<!--              <b>Relativity Space</b>-->
+<!--              <span><i class="fa-solid fa-circle-check"></i></span><br>-->
+<!--              @relativityspace-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <a class="btn btn-primary btn-block col-12 rounded-pill"-->
+<!--                 href="#">Follow</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-2">-->
+<!--              <img class="rounded-circle" src="vgalactic.png" width="50px"/>-->
+<!--            </div>-->
+<!--            <div class="col-6 text-nowrap">-->
+<!--              <b>Virgin Galactic</b>-->
+<!--              <span><i class="fa-solid fa-circle-check"></i></span><br>-->
+<!--              @virgingalactic-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <a class="btn btn-primary btn-block col-12 rounded-pill"-->
+<!--                 href="#">Follow</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-2">-->
+<!--              <img class="rounded-circle" src="nasa.png" width="50px"/>-->
+<!--            </div>-->
+<!--            <div class="col-6 text-nowrap">-->
+<!--              <b>NASA</b>-->
+<!--              <span><i class="fa-solid fa-circle-check"></i></span><br>-->
+<!--              @NASA-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <a class="btn btn-primary btn-block col-12 rounded-pill"-->
+<!--                 href="#">Follow</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row align-items-center">-->
+<!--            <div class="col-2">-->
+<!--              <img class="rounded-circle" src="tesla.png" width="50px"/>-->
+<!--            </div>-->
+<!--            <div class="col-6 text-nowrap">-->
+<!--              <b>Tesla</b>-->
+<!--              <span><i class="fa-solid fa-circle-check"></i></span><br>-->
+<!--              @tesla-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <a class="btn btn-primary btn-block col-12 rounded-pill"-->
+<!--                 href="#">Follow</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
