@@ -5,7 +5,6 @@ import ExploreComponent from "../ExploreComponent/ExploreComponent.js";
 
 
 function exploreComponent() {
-  console.log("hello");
 
   $('#wd-explore').append(` 
           <div class="row">

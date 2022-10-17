@@ -1,7 +1,6 @@
 import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
-  console.log("hello");
   return(`
    <div class="row align-items-center">
         <div class="col-11 position-relative">
