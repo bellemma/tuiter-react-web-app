@@ -25,7 +25,7 @@ const PostSummaryListItem = ({
               {post.title}
           </div>
           <div className="col-2 ">
-            e<img className="rounded" src={`../images/${post.image}`} width={`100%`} alt={`{post.topic}`}/>
+            <img className="rounded" src={`../images/${post.image}`} width={`100%`} alt={`{post.topic}`}/>
           </div>
         </div>
       </li>
