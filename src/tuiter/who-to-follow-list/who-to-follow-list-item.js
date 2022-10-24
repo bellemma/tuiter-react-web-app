@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const WhoToFollowListItem = ({
       who = {"_id": Number, "avatarIcon": String, "userName": String, "handle": String}
     }
@@ -6,7 +8,7 @@ const WhoToFollowListItem = ({
   <li className="list-group-item">
           <div className="row align-items-center">
             <div className="col-2">
-              <img className="rounded-circle" src={`../images/${who.avatarIcon}`} width={50} alt={""}/>
+              <img className="rounded-circle" src={`../images/${who.avatarIcon}`} width={50} alt={`{who.userName} Profile`}/>
             </div>
             <div className="col-6 text-nowrap">
               <b>{who.userName}</b>
@@ -15,8 +17,8 @@ const WhoToFollowListItem = ({
               @{who.handle}
             </div>
             <div className="col-4">
-              <a className="btn btn-primary btn-block col-12 rounded-pill"
-                 href="#">Follow</a>
+              <Link className="btn btn-primary btn-block col-12 rounded-pill"
+                 to="#">Follow</Link>
             </div>
           </div>
         </li>

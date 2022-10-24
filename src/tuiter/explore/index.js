@@ -1,5 +1,6 @@
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
+import {Link} from "react-router-dom";
 
 const ExploreComponent = () => {
   return(
@@ -12,33 +13,33 @@ const ExploreComponent = () => {
         </div>
         <div className="col-1 text-primary">
           <div className="wd-large-icon">
-            <a href="#">
+            <Link to="#">
               <i className="bi bi-gear-fill"/>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
 
       <ul className="nav nav-tabs mt-2">
         <li className="nav-item">
-          <a className="nav-link active" href="#">For You</a>
+          <Link className="nav-link active" to="#">For You</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Trending</a>
+          <Link className="nav-link" to="#">Trending</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">News</a>
+          <Link className="nav-link" to="#">News</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Sports</a>
+          <Link className="nav-link" to="#">Sports</Link>
         </li>
         <li className="nav-item d-sm-none d-md-inline d-lg-inline d-xl-inline d-xxl-inline">
-          <a className="nav-link" href="#">Entertainment</a>
+          <Link className="nav-link" to="#">Entertainment</Link>
         </li>
       </ul>
 
       <div className="position-relative">
-      <img className="mt-2 img-fluid" src={`../images/starship.webp`} width="100%"/>
+      <img className="mt-2 img-fluid" src={`../images/starship.webp`} width="100%" alt={`Starship`}/>
       <h2 className="text-white position-absolute bottom-0 start-0 ms-2">Space X's Starship</h2>
       </div>
       <PostSummaryList/>
