@@ -36,7 +36,7 @@ const ExploreComponent = () => {
       </ul>
 
       <div class="position-relative">
-      <img class="mt-2 img-fluid" src="../explore/starship.webp" width="100%"/>
+      <img class="mt-2 img-fluid" src="../../images/starship.webp" width="100%"/>
       <h2 class="text-white position-absolute bottom-0 start-0 ms-2">Space X's Starship</h2>
       </div>
       ${PostSummaryList()}
