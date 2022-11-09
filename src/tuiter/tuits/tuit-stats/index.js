@@ -20,7 +20,7 @@ const TuitStats = ({
             {' ' + tuit.retuits}
           </div>
           <div className="col-3">
-            <i className={`bi bi-heart${tuit.liked === true ? '-fill'+' text-danger' : ''}`}/>
+            <i className={`bi bi-heart${tuit.liked === true ? '-fill text-danger' : ''}`}/>
             {' ' + tuit.likes}
           </div>
           <div className="col-3">
