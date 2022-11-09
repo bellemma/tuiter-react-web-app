@@ -1,22 +1,23 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = (
-    {
-      active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+  const {pathname} = useLocation();
+  const paths = pathname.split('/')
+  const active = paths[2];
+  console.log(active)
   return (
       <div className="list-group">
         <Link to="#" className="list-group-item">
           <i className="bi bi-twitter"/>
-          Tuiter</Link>
-        <Link to="#" className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+          </Link>
+        <Link to="" className={`list-group-item
+                    ${active === undefined || active === '' ?'active':''}`}>
           <i className="bi bi-house-door-fill"/>
           Home
         </Link>
-        <Link to="#" className={`list-group-item
+        <Link to="explore" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
           <i className="bi bi-hash"/>
           Explore

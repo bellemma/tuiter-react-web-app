@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "topic": "Web Development",
+    "userName": "ReactJS",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "image": "react.png",
+    "liked": false,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@reactjs",
+    "tuit": "Build encapsulated components that manage their own state, then compose them to make complex UIs.\n\nSince component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM."
+
+  },
+  {
+    "_id": 2,
+    "topic": "",
+    "userName": "JavaScript",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "image": "js.png",
+    "tweets": "123K",
+    "liked": false,
+    "replies": 9999,
+    "retuits": 4,
+    "likes": 88,
+    "handle": "@js",
+    "tuit": "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. JavaScript is easy to learn"
+  },
+  {
+    "_id": 3,
+    "topic": "Web Development",
+    "userName": "",
+    "title": "jQuery",
+    "time": "last week",
+    "image": "jquery.png",
+    "tweets": "122K",
+    "liked": true,
+    "replies": 444,
+    "retuits": 411132,
+    "likes": 23025,
+    "handle": "@jquery",
+    "tuit": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript."
+  },
+  {
+    "_id": 4,
+    "topic": "Web Development",
+    "userName": "NodeJS",
+    "title": "",
+    "time": "last month",
+    "image": "nodejs.png",
+    "tweets": "120K",
+    "liked": false,
+    "replies": 0,
+    "retuits": 1,
+    "likes": 2,
+    "handle": "@nodejs",
+    "tuit": "Node.js is an open source server environment. Node.js is free. Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.). Node.js uses JavaScript on the server."
+  }
+]
