@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import {createTuit} from "../reducers/tuits-reducer.js";
+import {createTuitThunk}
+  from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 
@@ -8,9 +9,20 @@ const WhatsHappening = () => {
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
-      tuit: whatsHappening
+      topic: "Nasa",
+      username: "Nasa",
+      time: "now",
+      image: `../images/nasa.png`,
+      replies: 0,
+      handle: "@nasa",
+      tuit: whatsHappening,
+      liked: false,
+      disliked: false,
+      likes: 0,
+      dislikes: 0,
+      retuits: 0
     }
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
   }
   return (
       <div className="row">
