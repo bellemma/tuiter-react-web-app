@@ -35,7 +35,7 @@ const TuitStats = ({
                   ...tuit,
                   liked: false,
                   likes: tuit.likes - 1 }))
-              }}} className={`bi bi-heart${tuit.liked === true ? '-fill text-danger' : ''}`}/>
+              }}} className={`bi bi-heart${tuit.liked ? '-fill text-danger' : ''}`}/>
             {' ' + tuit.likes}
           </div>
           <div className="col-2">
